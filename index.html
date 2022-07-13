@@ -19,7 +19,7 @@
 
         <div class="mt-5">
             <div class="list-group col-4 offset-4">
-                <label class="list-group-item d-flex justify-content-between" v-for="todo in todos"> {{todo.text}}
+                <label class="list-group-item d-flex justify-content-between" :class="{'text-decoration-line-through':todo.done}"  v-for="todo in todos"> {{todo.text}}
                     <button type="button" class="btn btn-light"><i class="fa-solid fa-check"></i></button>
 
                 </label>
