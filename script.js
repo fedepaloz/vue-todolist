@@ -17,37 +17,42 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 
 
 
-const root = new Vue ({
-    el : '#root' ,
-    data : {
-        todos : [
+const root = new Vue({
+    el: '#root',
+    data: {
+        newTask: '',
+        todos: [
             {
-                text:"fare spesa",
-                done: true 
-            },
-            {
-                text:"esercizio",
-                done: false
-            },
-            {
-                text:"visita medico",
-                done: false 
-            },
-            {
-                text:"comprare calzini",
+                text: "fare spesa",
                 done: true
             },
             {
-                text:"ritirare pacco",
-                done: false 
+                text: "esercizio",
+                done: false
+            },
+            {
+                text: "visita medico",
+                done: false
+            },
+            {
+                text: "comprare calzini",
+                done: true
+            },
+            {
+                text: "ritirare pacco",
+                done: false
             },
         ]
     },
 
-    
-    methods : {
-        deleteTask(i){
-         this.todos.splice(i, 1)  
+
+    methods: {
+        deleteTask(i) {
+            this.todos.splice(i, 1)
+        },
+        addTask() {
+            this.todos.push(this.newTask)
+
         }
     },
 })

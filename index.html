@@ -25,6 +25,10 @@
                             class="fa-solid fa-check"></i></button>
 
                 </label>
+                <div class="input-group mb-3 mt-2">
+                    <button @click="addTask" class="btn btn-outline-secondary" type="button" id="button-addon1">Aggiungi</button>
+                    <input v-model="newTask" type="text" class="form-control" placeholder="aggiungi cose da fare" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                  </div>
 
             </div>
         </div>
