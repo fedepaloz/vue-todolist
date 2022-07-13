@@ -19,7 +19,32 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 
 const root = new Vue ({
     el : '#root' ,
-    data : {},
+    data : {
+        todos : [
+            {
+                text:"fare spesa",
+                done: true 
+            },
+            {
+                text:"esercizio",
+                done: false
+            },
+            {
+                text:"visita medico",
+                done: false 
+            },
+            {
+                text:"comprare calzini",
+                done: true
+            },
+            {
+                text:"ritirare pacco",
+                done: false 
+            },
+        ]
+    },
+
+    
     methods : {},
 })
 
